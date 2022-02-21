@@ -1,0 +1,1155 @@
+@font-face {
+  font-family: Outfit;
+  src: url(outfit/Outfit-Regular.woff);
+}
+
+/* @font-face {
+  font-family: HThin;
+  src: url(outfit/HThin.ttf)
+}
+
+@font-face {
+  font-family: HLight;
+  src: url(outfit/HLight.ttf)
+}
+
+@font-face {
+  font-family: HMed;
+  src: url(outfit/HMed.ttf)
+} */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #464c56;
+  --pink: #f3dbe4;
+  --ios: #ccc;
+}
+
+body {
+  background-color: var(--white);
+  font-family: Outfit;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#tamulink {
+  color: white;
+}
+
+.lines {
+  margin-top: 0.2vw;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+#section1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid #e96672;
+  border-left: 1vw solid white;
+  background-color: #e96672;
+}
+
+#topBar {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.4vw;
+  color: white;
+}
+
+.alignleft {
+  display: flex;
+  justify-self: space-between;
+  margin-left: 2vw;
+}
+
+.alignright {
+  display: flex;
+  justify-self: space-between;
+}
+
+.name {
+  padding-top: 1.5rem;
+}
+
+#splashImage {
+  width: 15%;
+  float: right;
+  margin-right: 29.3rem;
+}
+
+#splashName {
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding-left: 35px;
+  position: relative;
+  color: white;
+  margin-left: 35rem;
+}
+
+#splashInfo {
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 1;
+  padding: 20px;
+  text-align: right;
+  font-weight: 100;
+  white-space: nowrap;
+  margin-top: 5rem;
+  color: white;
+}
+
+#s1scrollcontainer {
+  margin: 0 auto;
+  margin-top: -15px;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: hidden;
+  margin-top: 21rem !important;
+  visibility: hidden;
+}
+
+.s1scroll {
+  animation: marquee 16s linear infinite;
+  display: inline-block;
+  font-size: 70px;
+
+  padding-left: 1%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#links {
+  font-weight: lighter;
+  font-size: 100;
+  position: absolute;
+  padding-top: 5px;
+  margin-top: 2vw;
+  right: 1px;
+  width: -6%;
+  text-align: center;
+  height: 50px;
+  background-color: white;
+}
+
+li {
+  display: inline-block;
+}
+
+#s1link {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: black;
+  padding: 0 3vw;
+}
+
+.hover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 1.5s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.icons {
+  margin-top: 0.5rem;
+}
+
+.linkedin {
+  margin-left: 1rem;
+}
+
+#section2 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #8053ae;
+  width: 100%;
+  border-left: 1vw solid white;
+}
+
+.s2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#alignleft2 {
+  display: flex;
+}
+
+#alignright2 {
+  float: right;
+  margin-right: 0.5vw;
+}
+
+.Sline {
+  margin-top: 0.1vw;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+#s2Name {
+  font-size: 150px;
+  letter-spacing: -5px;
+  text-align: right;
+  margin-top: 3rem;
+  margin-right: 9rem;
+}
+
+#s2info {
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+}
+
+#s2cnn {
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 38.7rem;
+  margin-bottom: 2rem;
+}
+
+#s2github {
+  font-size: 19px;
+  float: right;
+  margin-right: 0.5rem;
+}
+
+#colorings2github:link,
+#colorings2github:visited {
+  color: white;
+}
+
+#comingSoon {
+  position: center;
+  font-family: HMed;
+  text-align: center;
+  font-size: 2vw;
+  height: 2vw;
+  padding: 1vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  margin-top: 3rem;
+  line-height: 2vw;
+  border: 0.3vw solid white;
+  border-radius: 5vw;
+  width: 15%;
+}
+
+#section3 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #ff83b7;
+  border-left: 1vw solid white;
+  width: 100%;
+}
+
+.s3bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#alignleft3 {
+  display: flex;
+}
+
+#alignright3 {
+  float: right;
+  margin-right: 0.5vw;
+}
+
+#section3main {
+  font-family: HMed;
+  font-size: 120px;
+  padding-left: 10vw;
+  padding-top: 10rem;
+  height: 133px;
+  letter-spacing: 0.5px;
+}
+
+#below3 {
+  font-size: 40px;
+  padding-left: 10.3vw;
+  height: 195px;
+}
+
+#ccsummary {
+  font-size: 30px;
+  width: 350px;
+  letter-spacing: -2px;
+  padding-left: 12vw;
+  line-height: 1;
+  letter-spacing: 3.5px;
+}
+
+.github-button {
+  margin-left: 30rem;
+  float: right;
+}
+
+a.githubbtn {
+  color: white;
+  display: block;
+  padding: 14px 21px 11px 21px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #33a700;
+  width: 15%;
+  margin-left: 13.1rem;
+  margin-top: 3.2rem;
+}
+
+a.githubbtn:hover {
+  background-position: 89% 49%;
+  background-color: #346320;
+}
+
+a.githubbtn span {
+  display: block;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.jPanelMenu,
+body {
+  overflow-x: initial;
+}
+
+#ccimg {
+  width: 45%;
+  float: left;
+  margin-left: 3.4rem;
+  margin-top: 4.7rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#ccNote {
+  color: white;
+  font-size: 25px;
+  text-align: right;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+  margin-top: 5rem;
+}
+
+#bottomBar {
+  font-family: HLight;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vw;
+}
+
+#alignleftB {
+  display: flex;
+}
+
+#alignrightB {
+  float: right;
+}
+
+#top:link,
+#top:visited {
+  color: black;
+}
+
+/* small screen monitor */
+
+@media screen and (max-width: 2000px) {
+  #splashName {
+    margin-top: 0.5rem;
+  }
+
+  #splashInfo {
+    margin-top: 1.5rem;
+    margin-right: 1.2rem;
+  }
+
+  #s1scrollcontainer {
+    margin-top: 13.2rem !important;
+  }
+
+  #splashImage {
+    width: 13%;
+    margin-left: 30rem;
+  }
+
+  #ccimage {
+    position: absolute;
+    width: 50%;
+    left: 50rem;
+    top: 140rem;
+  }
+}
+
+/* big screen monitor */
+
+@media screen and (min-width: 2000px) {
+  #s2info {
+    margin-top: 40rem;
+  }
+
+  #s2github {
+    margin-top: 3rem;
+  }
+}
+
+.switch {
+  font-size: 16.9px;
+  display: inline-block;
+  position: relative;
+  margin-right: 2.4rem;
+  height: 2.1rem;
+  width: 3.6rem;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: var(--ios);
+  transition: 0.5s;
+  border-radius: 31px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.45rem;
+  width: 1.43rem;
+  border-radius: 21px;
+  left: 0.26rem;
+  bottom: 0.33rem;
+  background-color: white;
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: rgb(2, 226, 84);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(2, 226, 84);
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.45rem);
+}
+
+/* this is about */
+
+.alines {
+  margin-top: 0.1vw;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#asection1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid #94bea1;
+  background-color: #94bea1;
+}
+
+#aaTitle {
+  font-size: 150px;
+  letter-spacing: -5px;
+  position: relative;
+  color: var(--white);
+  margin-left: 50rem;
+  width: 90%;
+}
+
+#aaboutImage {
+  width: 35%;
+  float: right;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#aaboutText {
+  padding: 1rem;
+  width: 50%;
+  margin-left: 4rem;
+  color: var(--black);
+  margin-top: 9.5rem;
+  text-align: justify;
+  font-size: 20px;
+  border-radius: 1.5rem;
+  background: var(--pink);
+}
+
+#aaboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#alinks {
+  font-family: Outfit;
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: black;
+  padding: 0 3vw;
+}
+
+.hover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 1.5s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+  color: white;
+}
+
+a:alink {
+  text-decoration: none;
+}
+
+.aicons {
+  margin-top: 0.5rem;
+}
+
+.alinkedin {
+  margin-left: 1rem;
+}
+
+/* section 2 */
+
+#asection2 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #72c4dd;
+  border-left: 1vw solid #72c4dd;
+}
+
+.as2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#aalignleft2 {
+  display: flex;
+}
+
+#as2Name {
+  font-size: 130px;
+  letter-spacing: -5px;
+  text-align: left;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+#as2info {
+  margin-top: 9.5rem;
+  color: var(--black);
+  padding: 1rem;
+  width: 50%;
+  text-align: justify;
+  margin-left: 7rem;
+  font-size: 20px;
+  border-radius: 1.5rem;
+  background: #eda565;
+}
+
+#as2strava {
+  font-size: 19px;
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 8.5rem;
+}
+
+#acolorings2strava:link,
+#acolorings2strava:visited {
+  color: white;
+}
+
+/* this is portfolio */
+
+#paboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: var(--white);
+}
+
+#pcagiline {
+  margin-top: 0.1vm;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+.pgithub-button {
+  margin-left: 100rem;
+  margin-top: 104rem;
+}
+
+#psection1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid #6a9df5;
+  background-color: #6a9df5;
+}
+
+.pname {
+  padding-top: 1.5rem;
+}
+
+a.pgithubbtn {
+  color: white;
+  display: block;
+  padding: 14px 21px 11px 21px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #33a700;
+  width: 15%;
+  margin-left: 13.1rem;
+  margin-top: 3.2rem;
+}
+
+a.pgithubbtn:hover {
+  background-position: 89% 49%;
+  background-color: #44832a;
+}
+
+a.pgithubbtn span {
+  display: block;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+#pccimg {
+  width: 45%;
+  float: right;
+  margin-right: 4.4rem;
+  margin-top: 4.7rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#ps1Name {
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding-left: 35px;
+  position: relative;
+  margin-left: 45rem;
+  color: var(--white);
+}
+
+#pccInfo {
+  font-family: Outfit;
+  font-size: 20px;
+  padding: 1rem;
+  width: 40%;
+  margin-left: 7rem;
+  color: var(--white);
+  margin-top: 7.5rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  background: #124187;
+}
+
+#plinks {
+  font-family: Outfit;
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+#portLink {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 0 3vw;
+}
+
+.hover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 1.5s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+  color: white;
+}
+
+a:plink {
+  text-decoration: none;
+}
+
+.picons {
+  margin-top: 0.5rem;
+}
+
+.plinkedin {
+  margin-left: 1rem;
+}
+
+#psection2 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #c4dce8;
+  border-left: 1vw solid #c4dce8;
+}
+
+.ps2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#palignleft2 {
+  display: flex;
+}
+
+#ps2Name {
+  font-size: 130px;
+  letter-spacing: -5px;
+  text-align: left;
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+
+#ps2info {
+  margin-top: 7.5rem;
+  color: var(--black);
+  padding: 1rem;
+  width: 50%;
+  text-align: justify;
+  margin-left: 4rem;
+  font-size: 20px;
+  border-radius: 1.5rem;
+  background: var(--white);
+}
+
+#paboutImage {
+  width: 35%;
+  float: right;
+  margin-right: 3.4rem;
+  margin-top: 1.5rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#ps2github {
+  font-size: 19px;
+  float: left;
+  margin-left: 5.5rem;
+  margin-top: 3.5rem;
+}
+
+#pcolorings2github:link,
+#pcolorings2github:visited {
+  color: white;
+}
+
+.pcagi6:visited,
+#pcagi6:link {
+  color: white;
+}
+
+/* this is qualifications */
+
+#qsection1 {
+  height: 140vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(126, 166, 212);
+  background-color: rgb(126, 166, 212);
+}
+
+.qqualTitle {
+  margin-top: 2rem;
+}
+
+#qaboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+#qqTitle {
+  font-size: 120px;
+  letter-spacing: -5px;
+  position: relative;
+  color: var(--white);
+  margin-left: 50rem;
+  width: 90%;
+}
+
+#qtechnical {
+  margin-top: 6.4rem;
+  margin-left: 21rem;
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
+  color: white;
+}
+
+#qtechnicalbar {
+  margin-top: 10rem;
+  width: 19%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+#qtechnicalAbout {
+  float: right;
+  margin-right: 5rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  width: 40%;
+  color: white;
+}
+
+#qtIntrest {
+  margin-top: 6.4rem;
+  margin-right: 14rem;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+  color: white;
+}
+
+#qtechnicalbarI {
+  margin-top: 10rem;
+  width: 38%;
+  height: 2px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#qtechnicalAoI {
+  float: right;
+  margin-right: 6rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  width: 40%;
+  color: white;
+}
+
+#qresume {
+  margin-top: 7rem;
+  margin-right: 2rem;
+  float: right;
+}
+
+#qlinks {
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+#qualLink {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: white;
+  padding: 0 3vw;
+}
+
+.hover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 1.5s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+  color: white;
+}
+
+a:qlink {
+  text-decoration: none;
+}
+
+.qicons {
+  margin-top: 0.5rem;
+}
+
+.qlinkedin {
+  margin-left: 1rem;
+}
+
+/* this is service */
+
+#saboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+#sstdavidline {
+  margin-top: 0.1vm;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: white;
+}
+
+#ssection1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid #accbe1;
+  background-color: #accbe1;
+}
+
+.sname {
+  padding-top: 1.5rem;
+}
+
+#sseniormentor {
+  width: 35%;
+  float: right;
+  margin-right: 12.4rem;
+  margin-top: 2.7rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#sra {
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding-left: 35px;
+  position: relative;
+  color: white;
+  margin-left: 35rem;
+}
+
+#ssmInfo {
+  font-size: 20px;
+  padding: 1rem;
+  width: 40%;
+  margin-left: 9rem;
+  color: var(--black);
+  margin-top: 9.5rem;
+  text-align: justify;
+  border-radius: 1.5rem;
+  background: var(--white);
+}
+
+#slinks {
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+#servicelink {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: white;
+  padding: 0 3vw;
+}
+
+.hover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 1.5s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+  color: white;
+}
+
+a:slink {
+  text-decoration: none;
+}
+
+.sicons {
+  margin-top: 0.5rem;
+}
+
+.slinkedin {
+  margin-left: 1rem;
+}
+
+#ssection2 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #7c98b3;
+}
+
+.ss2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#salignleft2 {
+  display: flex;
+}
+
+#ss2Name {
+  font-size: 130px;
+  letter-spacing: -5px;
+  text-align: left;
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+#ss2info {
+  margin-top: 9.5rem;
+  color: var(--black);
+  padding: 1rem;
+  width: 50%;
+  text-align: justify;
+  margin-left: 7rem;
+  font-size: 20px;
+  border-radius: 1.5rem;
+  background: var(--white);
+}
+
+#saboutImage {
+  width: 35%;
+  float: right;
+  margin-right: 3.4rem;
+  margin-top: 1.5rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}

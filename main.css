@@ -1,0 +1,1301 @@
+/* @font-face {
+  font-family: HThin;
+  src: url(outfit/HThin.ttf)
+}
+
+@font-face {
+  font-family: HLight;
+  src: url(outfit/HLight.ttf)
+}
+
+@font-face {
+  font-family: HMed;
+  src: url(outfit/HMed.ttf)
+} */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #464c56;
+  --tan: #e9d5a1;
+  --ios: #ccc;
+  --pink: #f3dbe4;
+}
+
+body {
+  background-color: var(--black);
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#tamulink {
+  color: black;
+}
+
+.lines {
+  margin-top: 0.2vw;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#section1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(10, 10, 10);
+  border-left: 1vw solid rgb(10, 10, 10);
+  background-color: var(--tan);
+}
+
+#topBar {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.8vw;
+}
+
+.alignleft {
+  display: flex;
+  justify-self: space-between;
+  margin-left: 2vw;
+  padding-top: 0.5vw;
+}
+
+.aligncenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.alignright {
+  display: flex;
+  justify-self: space-between;
+}
+
+.name {
+  padding-top: 1.5rem;
+}
+
+#splashImage {
+  width: 15%;
+  float: left;
+  margin-left: 31.3rem;
+}
+
+#splashName {
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding-left: 35px;
+  position: relative;
+}
+
+#splashInfo {
+  font-family: "Source Code Pro", monospace;
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 1;
+  padding: 20px;
+  text-align: right;
+  font-weight: 100;
+  white-space: nowrap;
+  margin-top: 5rem;
+}
+
+#s1scrollcontainer {
+  margin: 0 auto;
+  margin-top: -15px;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: hidden;
+  margin-top: 21rem !important;
+}
+
+.s1scroll {
+  animation: marquee 16s linear infinite;
+  display: inline-block;
+  font-size: 70px;
+
+  padding-left: 1%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#links {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: lighter;
+  font-size: 100;
+  position: absolute;
+  padding-top: 5px;
+  margin-top: 2vw;
+  margin-left: -5vw;
+  width: 90%;
+  text-align: center;
+  height: 50px;
+  background-color: rgb(10, 10, 10);
+}
+
+li {
+  display: inline-block;
+}
+
+#s1link {
+  text-decoration: none;
+  display: inline-block;
+  /* font-family: HThin; */
+  font-size: 30px;
+  color: white;
+  padding: 0 3vw;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.icons {
+  margin-top: 0.5rem;
+}
+
+.linkedin {
+  margin-left: 1rem;
+}
+
+#section2 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #eda565;
+  border-left: 1vw solid rgb(10, 10, 10);
+  width: 100%;
+}
+
+.s2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#alignleft2 {
+  display: flex;
+}
+
+#alignright2 {
+  float: right;
+}
+
+.Sline {
+  margin-top: 0.1vw;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#s2Name {
+  font-size: 150px;
+  letter-spacing: -5px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#s2info {
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+}
+
+#s2cnn {
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 38.7rem;
+  margin-bottom: 2rem;
+}
+
+#s2github {
+  font-size: 19px;
+  float: right;
+  margin-right: 0.5rem;
+}
+
+#colorings2github:link,
+#colorings2github:visited {
+  color: white;
+}
+
+#comingSoon {
+  position: center;
+  font-family: HMed;
+  text-align: center;
+  font-size: 2vw;
+  height: 2vw;
+  padding: 1vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  margin-top: 3rem;
+  line-height: 2vw;
+  border: 0.3vw solid white;
+  border-radius: 5vw;
+  width: 15%;
+}
+
+#section3 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #f66955;
+  border-left: 1vw solid rgb(10, 10, 10);
+  width: 100%;
+}
+
+.s3bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#alignleft3 {
+  display: flex;
+}
+
+#alignright3 {
+  float: right;
+}
+
+#section3main {
+  font-family: HMed;
+  font-size: 120px;
+  padding-left: 10vw;
+  padding-top: 10rem;
+  height: 133px;
+  letter-spacing: 0.5px;
+}
+
+#below3 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  padding-left: 10.3vw;
+  height: 195px;
+}
+
+#ccsummary {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  width: 350px;
+  letter-spacing: -2px;
+  padding-left: 12vw;
+  line-height: 1;
+  letter-spacing: 3.5px;
+}
+
+.github-button {
+  margin-left: 30rem;
+  float: left;
+}
+
+a.githubbtn {
+  color: white;
+  display: block;
+  padding: 14px 21px 11px 21px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #33a700;
+  width: 15%;
+  margin-left: 13.1rem;
+  margin-top: 3.2rem;
+}
+
+a.githubbtn:hover {
+  background-position: 89% 49%;
+  background-color: #44832a;
+}
+
+a.githubbtn span {
+  display: block;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.jPanelMenu,
+body {
+  overflow-x: initial;
+}
+
+#ccimage {
+  position: absolute;
+  width: 40%;
+  left: 65rem;
+  top: 177rem;
+}
+
+#ccNote {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  text-align: right;
+  padding-right: 10vw;
+  padding-bottom: 50px;
+  margin-top: 4rem;
+}
+
+#bottomBar {
+  font-family: HLight;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vw;
+}
+
+#alignleftB {
+  display: flex;
+}
+
+#alignrightB {
+  float: right;
+}
+
+#top:link,
+#top:visited {
+  color: white;
+}
+
+/* small screen monitor */
+
+@media screen and (max-width: 2000px) {
+  #splashName {
+    margin-top: 0.5rem;
+  }
+
+  #splashInfo {
+    margin-top: 1.5rem;
+    margin-right: 1.2rem;
+  }
+
+  #s1scrollcontainer {
+    margin-top: 13.2rem !important;
+  }
+
+  #splashImage {
+    width: 13%;
+    margin-left: 30rem;
+  }
+
+  #ccimage {
+    position: absolute;
+    width: 50%;
+    left: 50rem;
+    top: 140rem;
+  }
+}
+
+/* big screen monitor */
+
+@media screen and (min-width: 2000px) {
+  #s2info {
+    margin-top: 40rem;
+  }
+
+  #s2github {
+    margin-top: 3rem;
+  }
+}
+
+.switch {
+  font-size: 16.9px;
+  display: inline-block;
+  position: relative;
+  margin-right: 2.4rem;
+  height: 2.1rem;
+  width: 3.6rem;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: var(--ios);
+  transition: 0.5s;
+  border-radius: 31px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.45rem;
+  width: 1.43rem;
+  border-radius: 21px;
+  left: 0.26rem;
+  bottom: 0.33rem;
+  background-color: white;
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: rgb(2, 226, 84);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(2, 226, 84);
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.45rem);
+}
+
+/* THIS IS ALL THE ABOUT PAGE CSS */
+
+.alines {
+  margin-top: 0.1vw;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#asection1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(10, 10, 10);
+  border-left: 1vw solid rgb(10, 10, 10);
+  background-color: var(--pink);
+}
+
+#aaTitle {
+  font-size: 150px;
+  letter-spacing: -5px;
+  position: relative;
+  color: var(--black);
+  margin-left: 4rem;
+  width: 90%;
+}
+
+#aaboutImage {
+  width: 35%;
+  float: left;
+  margin-left: 3.4rem;
+  margin-top: 1.5rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#aaboutText {
+  font-family: "Titillium Web", sans-serif;
+  padding: 1rem;
+  width: 50%;
+  margin-left: 47rem;
+  color: var(--black);
+  margin-top: 9.5rem;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#aaboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#alinks {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: white;
+  padding: 0 3vw;
+}
+
+.hover::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 1.5s;
+}
+
+.hover:hover::after {
+  width: 100%;
+  transition: width 1.5s;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.aicons {
+  margin-top: 0.5rem;
+}
+
+.alinkedin {
+  margin-left: 1rem;
+}
+
+/* section 2 */
+
+#asection2 {
+  height: 100vh;
+  min-height: 900px;
+  color: white;
+  background-color: #eda565;
+  border-left: 1vw solid rgb(10, 10, 10);
+}
+
+.as2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+}
+
+#aalignleft2 {
+  display: flex;
+}
+
+#as2Name {
+  font-size: 130px;
+  letter-spacing: -5px;
+  text-align: right;
+  margin-right: 10rem;
+  margin-top: 3rem;
+}
+
+#as2info {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 9.5rem;
+  color: var(--black);
+  padding: 1rem;
+  width: 50%;
+  text-align: justify;
+  margin-left: 47rem;
+  font-size: 20px;
+}
+
+#as2strava {
+  font-size: 19px;
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 8.5rem;
+}
+
+#acolorings2strava:link,
+#acolorings2strava:visited {
+  color: white;
+}
+
+.aswitch {
+  font-size: 16.9px;
+  display: inline-block;
+  position: relative;
+  margin-right: 2.4rem;
+  height: 2.1rem;
+  width: 3.6rem;
+}
+
+.aswitch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.aslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.aslider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .aslider {
+  background-color: rgb(0, 221, 80);
+}
+
+input:focus + .aslider {
+  box-shadow: 0 0 1px rgb(0, 221, 80);
+}
+
+input:checked + .aslider:before {
+  transform: translateX(1.5em);
+}
+
+/* THIS IS ALL PORTFOLIO CSS */
+
+#paboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#pcagiline {
+  margin-top: 0.1vm;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+.pgithub-button {
+  margin-left: 100rem ;
+  margin-top: 104rem;
+}
+
+#psection1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(10, 10, 10);
+  border-left: 1vw solid rgb(10, 10, 10);
+  background-color: #124187;
+}
+
+.pname {
+  padding-top: 1.5rem;
+}
+
+a.pgithubbtn {
+  color: white;
+  display: block;
+  padding: 14px 21px 11px 21px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #33a700;
+  width: 15%;
+  margin-left: 13.1rem;
+  margin-top: 7.2rem;
+}
+
+a.pgithubbtn:hover {
+  background-position: 89% 49%;
+  background-color: #44832a;
+}
+
+a.pgithubbtn span {
+  display: block;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+#pccimg {
+  width: 45%;
+  float: left;
+  margin-left: 3.4rem;
+  margin-top: 4.7rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#ps1Name {
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding-left: 35px;
+  position: relative;
+}
+
+#pccInfo {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+  width: 40%;
+  margin-left: 57rem;
+  color: var(--black);
+  margin-top: 3.5rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+#plinks {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+#portLink {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding: 0 3vw;
+}
+
+
+a:plinks {
+  text-decoration: none;
+}
+
+.picons {
+  margin-top: 0.5rem;
+}
+
+.plinkedin {
+  margin-left: 1rem;
+}
+
+#psection2 {
+  height: 100vh;
+  min-height: 900px;
+  color: black;
+  background-color: #695490;
+  border-left: 1vw solid rgb(10, 10, 10);
+}
+
+.ps2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+  color: black;
+}
+
+#palignleft2 {
+  display: flex;
+}
+
+#ps2Name {
+  font-size: 130px;
+  letter-spacing: -5px;
+  text-align: right;
+  margin-right: 10rem;
+  margin-top: 3rem;
+}
+
+#ps2info {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 9.5rem;
+  color: var(--black);
+  padding: 1rem;
+  width: 50%;
+  text-align: justify;
+  margin-left: 47rem;
+  font-size: 20px;
+}
+
+#paboutImage {
+  width: 35%;
+  float: left;
+  margin-left: 3.4rem;
+  margin-top: 1.5rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#ps2github {
+  font-size: 19px;
+  float: right;
+  margin-right: 0.5rem;
+  color: black;
+}
+
+#pcolorings2github:link,
+#pcolorings2github:visited {
+  color: black;
+}
+
+.pcagi6:visited,
+#pcagi6:link {
+  color: black;
+}
+
+.pswitch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 1.9em;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.pswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.pslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.pslider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .pslider {
+  background-color: rgb(0, 221, 80);
+}
+
+input:focus + .pslider {
+  box-shadow: 0 0 1px rgb(0, 221, 80);
+}
+
+input:checked + .pslider:before {
+  transform: translateX(1.5em);
+}
+
+/* THIS IS ALL THE QUALIFICATIONS */
+
+#qsection1 {
+  height: 140vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(10, 10, 10);
+  border-left: 1vw solid rgb(10, 10, 10);
+  background-color: #a65f5c;
+}
+
+.qqualTitle {
+  margin-top: 2rem;
+}
+
+#qaboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#qqTitle {
+  font-size: 120px;
+  letter-spacing: -5px;
+  position: relative;
+  color: var(--black);
+  margin-left: 4rem;
+  width: 90%;
+}
+
+#qtechnical {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 6.4rem;
+  margin-right: 23rem;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+}
+
+#qtechnicalbar {
+  margin-top: 10rem;
+  width: 18%;
+  height: 2px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+}
+
+#qtechnicalAbout {
+  font-family: "Titillium Web", sans-serif;
+  float: right;
+  margin-right: 5rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  width: 40%;
+}
+
+#qtIntrest {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 6.4rem;
+  margin-right: 23rem;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+}
+
+#qtechnicalbarI {
+  margin-top: 10rem;
+  width: 38%;
+  height: 2px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+}
+
+#qtechnicalAoI {
+  font-family: "Titillium Web", sans-serif;
+  float: right;
+  margin-right: 5rem;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  width: 40%;
+}
+
+#qresume {
+  margin-top: 7rem;
+  margin-left: 2rem;
+  float: left;
+}
+
+#qlinks {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+#qualLink {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding: 0 3vw;
+}
+
+
+a:qlink {
+  text-decoration: none;
+}
+
+.qicons {
+  margin-top: 0.5rem;
+}
+
+.qlinkedin {
+  margin-left: 1rem;
+}
+
+.qswitch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 1.9em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+}
+
+.qswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.qslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.qslider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .qslider {
+  background-color: rgb(0, 221, 80);
+}
+
+input:focus + .qslider {
+  box-shadow: 0 0 1px rgb(0, 221, 80);
+}
+
+input:checked + .qslider:before {
+  transform: translateX(1.5em);
+}
+
+/* THIS IS SERVICE SECTION */
+
+#saboveNavbar {
+  margin-top: 3rem;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#sstdavidline {
+  margin-top: 0.1vm;
+  width: 97%;
+  height: 2px;
+  border: none;
+  background-color: black;
+}
+
+#ssection1 {
+  height: 100vh;
+  min-height: 900px;
+  width: 99vw;
+  border-top: 1vw solid rgb(10, 10, 10);
+  border-left: 1vw solid rgb(10, 10, 10);
+  background-color: #38a3a5;
+}
+
+.sname {
+  padding-top: 1.5rem;
+}
+
+#sseniormentor {
+  width: 35%;
+  float: left;
+  margin-left: 3.4rem;
+  margin-top: 2.7rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+#sra {
+  font-size: 150px;
+  letter-spacing: -5px;
+  padding-left: 35px;
+  position: relative;
+}
+
+#ssmInfo {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+  width: 40%;
+  margin-left: 50rem;
+  color: var(--black);
+  margin-top: 9.5rem;
+  text-align: justify;
+}
+
+#slinks {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: lighter;
+  font-size: 9px;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+li {
+  display: inline-block;
+}
+
+#servicelink {
+  text-decoration: none;
+  display: inline-block;
+  font-family: HThin;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding: 0 3vw;
+}
+
+
+a:slink {
+  text-decoration: none;
+}
+
+.sicons {
+  margin-top: 0.5rem;
+}
+
+.slinkedin {
+  margin-left: 1rem;
+}
+
+#ssection2 {
+  height: 100vh;
+  min-height: 900px;
+  color: black;
+  background-color: #57cc99;
+  border-left: 1vw solid rgb(10, 10, 10);
+}
+
+.ss2bar {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.6vw;
+  color: black;
+}
+
+#salignleft2 {
+  display: flex;
+}
+
+#ss2Name {
+  font-size: 130px;
+  letter-spacing: -5px;
+  text-align: right;
+  margin-right: 10rem;
+  margin-top: 3rem;
+}
+
+#ss2info {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 9.5rem;
+  color: var(--black);
+  padding: 1rem;
+  width: 50%;
+  text-align: justify;
+  margin-left: 47rem;
+  font-size: 20px;
+}
+
+#saboutImage {
+  width: 35%;
+  float: left;
+  margin-left: 3.4rem;
+  margin-top: 1.5rem;
+  object-fit: cover;
+  object-position: 20% 50%;
+  border-radius: 1.5rem;
+}
+
+.sswitch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 1.9em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+}
+
+.sswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.sslider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .sslider {
+  background-color: rgb(0, 221, 80);
+}
+
+input:focus + .sslider {
+  box-shadow: 0 0 1px rgb(0, 221, 80);
+}
+
+input:checked + .sslider:before {
+  transform: translateX(1.5em);
+}
+
+
